@@ -19,3 +19,10 @@ run: all
 	LD_LIBRARY_PATH=. ./main
 clean:
 	rm -f $(TARGET) $(LIB)
+
+# -Wall        : Enable most common compiler warnings
+# -Wextra      : Enable additional (stricter) compiler warnings
+# -fPIC        : Generate position-independent code (required for shared libraries)
+# -L.          : Add the current directory to the library search path
+# -lmandelbrot : Link against libmandelbrot.so (or libmandelbrot.a)
+# -shared      : Build a shared (dynamic) library instead of an executable	

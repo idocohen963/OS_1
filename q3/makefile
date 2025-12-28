@@ -24,5 +24,5 @@ clean:
 # -Wextra      : Enable additional (stricter) compiler warnings
 # -fPIC        : Generate position-independent code (required for shared libraries)
 # -L.          : Add the current directory to the library search path
-# -lmandelbrot : Link against libmandelbrot.so (or libmandelbrot.a)
+# -lmandelbrot : Link against libmandelbrot.so 
 # -shared      : Build a shared (dynamic) library instead of an executable	

@@ -1,12 +1,11 @@
-
 /**
  * @file findPhone.cpp
  * 
  * @details This program demonstrates the use of:
- *          - fork(2): Creating child processes
- *          - execve(2): Executing external commands (grep, sed, awk)
- *          - pipe(2): Inter-process communication
- *          - dup2(2): File descriptor duplication for I/O redirection
+ *          - fork(2): Creating child processes. This function creates a new process by duplicating the calling process. The child process gets a unique process ID and executes independently.
+ *          - execve(2): Executing external commands (grep, sed, awk). This function replaces the current process image with a new process image, allowing execution of external programs.
+ *          - pipe(2): Inter-process communication. This function creates a unidirectional data channel that can be used for communication between processes.
+ *          - dup2(2): File descriptor duplication for I/O redirection. This function duplicates a file descriptor, making it possible to redirect standard input/output to pipes or files.
  
  * The program searches for a phone number in phonebook.txt by:
  * 1. grep - Filtering lines containing the name

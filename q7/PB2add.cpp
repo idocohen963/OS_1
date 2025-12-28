@@ -63,8 +63,8 @@ bool is_valid_phone(const char* phone) {
 int main(int argc, char *argv[]) {
     // Validate command line arguments
     if (argc < 3) {
-        cerr << "Usage: ./add2PB <full name> <phone number>\n";
-        cerr << "run example: ./add2PB John Doe 123-4567890\n";
+        cerr << "Usage: ./PB2add  <full name> <phone number>\n";
+        cerr << "run example: ./PB2add  John Doe 123-4567890\n";
         return 1;
     }
 
